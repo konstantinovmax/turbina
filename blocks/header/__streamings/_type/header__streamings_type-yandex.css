@@ -1,0 +1,11 @@
+.header__streamings_type-yandex {
+    width: 199px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,14 @@
+@import url(./__logo/header__logo.css);
+@import url(./__streamings/header__streamings.css);
+@import url(./__streaming-title/header__streaming-title.css);
+@import url(./__title/header__title.css);
+
+.header {
+    height: 100vh;
+    min-height: 600px;
+    max-height: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}

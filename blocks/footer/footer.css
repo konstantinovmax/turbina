@@ -1,3 +1,7 @@
+@import url(./__copyright/footer__copyright.css);
+
 .footer {
-    
+    margin: 35px;
+    display: flex;
+    justify-content: space-between;
 }

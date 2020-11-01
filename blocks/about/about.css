@@ -1,0 +1,9 @@
+@import url(./__title/about__title.css);
+@import url(./__paragraph/about__paragraph.css);
+
+.about {
+    width: 100%;
+    padding-left: 58px;
+    padding-right: 486px;
+    box-sizing: border-box;
+}

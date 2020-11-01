@@ -1,0 +1,17 @@
+@import url(./__radio/form__radio.css);
+@import url(./__container/form__container.css);
+@import url(./__input/form__input.css);
+@import url(./__textarea/form__textarea.css);
+@import url(./__submit-button/form__submit-button.css);
+@import url(./__title/form__title.css);
+@import url(./__radio-container/form__radio-container.css);
+@import url(./__radio-offer-link/form__radio-offer-link.css);
+@import url(./__radio-offer/form__radio-offer.css);
+
+.form {
+    width: 100%;
+    padding-left: 58px;
+    padding-top: 100px;
+    padding-right: 605px;
+    box-sizing: border-box;
+}

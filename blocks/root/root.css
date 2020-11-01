@@ -1,16 +1,14 @@
-@import url(./root__content/root__content.css);
+@import url(./__content/root__content.css);
+@import url(./__header/root__header.css);
+@import url(./__main-footer/root__main-footer.css);
 
-/*
-header, span, div, nav, p, h1, h2, h3, h4, a, section, ul, li, img, iframe {
+
+header, span, div, nav, p, h1, h2, h3, h4, a, section, ul, li, img, iframe, input {
     outline: 1px solid;
     outline-color: red;
 }
-*/
 
 .root {
     font-family: 'Inter', Sans-serif, Arial;
     color: #ffffff;
-    background-image: url(../../images/turbina-background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }

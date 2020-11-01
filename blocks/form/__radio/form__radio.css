@@ -1,0 +1,7 @@
+.form__radio {
+    margin: 0;
+    margin-right: 14px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    cursor: pointer;
+}

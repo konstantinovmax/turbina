@@ -1,7 +1,17 @@
 @import url(./__copyright/footer__copyright.css);
+@import url(./__copyright-link/footer__copyright-link.css);
 
 .footer {
-    margin: 35px;
+    margin: 20px 15px;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }

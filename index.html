@@ -28,7 +28,7 @@
                         <a class="header__streaming-title" href="#">VK Music ↗</a>
                     </li>
                 </ul>
-                <h1>
+                <h1 class="header__title">
                     <img class="header__image" src="./images/header-image.png" alt="Турбина">
                 </h1>
                 <div class="header__song-player"></div>
@@ -37,39 +37,40 @@
         <div class="root__main-footer">
             <main class="content">
                 <section class="about">
-                    <h2 class="about__title">О проекте</h2>
+                    <h2 class="about__title">О ПРОЕКТЕ.</h2>
                     <p class="about__paragraph">Мы знаем, что наши дети постоянно существуют в режиме непрекращающегося творческого процесса. Мы видим это, когда ребёнок что-то напевает, когда он бесконечно рисует, когда придумывает истории, когда разговаривает с едой и игрушками — дети постоянно включены и что-то изобретают. Родители часто недооценивают это спонтанное творчество ребёнка. Это не плохо, просто мы привыкаем к этому. Давайте попробуем внимательнее присмотреться к нашим детям.</p>
                     <p class="about__paragraph">Мы запускаем проект «ТУРБИНА», который открывает работу настоящего музыкального лейбла на базе «Маршака». В рамках «ТУРБИНЫ» лучшие современные инди-музыканты пишут свои песни на стихи, написанные детьми. Здесь важно — мы не заставляем наших детей садиться и писать поэзию, мы говорим о том, что родителям стоит быть более внимательными и чуткими к своим детям. Именно так мы сможем получить тексты, которые перестанут быть детскими, не будут осмыслены как взрослые — поэзия, которая сокращает дистанцию между взрослостью и детством, где спонтанное детское творчество и бессознательное, замеченное родителем, становится общественным культурным достоянием.</p>
                 </section>
                 <section class="about">
-                    <h2 class="about__title">Как это работает?</h2>
+                    <h2 class="about__title">КАК ЭТО РАОТАЕТ?</h2>
                     <p class="about__paragraph">Вы можете прислать нам тексты, родившиеся у ваших детей, которые вы записали и считаете, что это сильное высказывание. Мы собираем пул таких текстов и передаём их музыкантам. Артисты создают музыку на эти стихи. Мы продюсируем выпуск трека, возможно съёмки клипа и так далее. Мы всегда указываем автора стихотворений внутри релиза: Хадн Дадн feat. Варя Карпова и Федя Быстров — Контур.</p>
                 </section>
                 <section class="about">
-                    <h2 class="about__title">Тезисы</h2>
-                    <p class="about__paragraph">— Дети никогда не прекращают творить и круто стараться быть на них похожими в этом</p>
-                    <p class="about__paragraph">— Детское бессознательное помогает родителям понять, что происходит внутри семьи</p>
-                    <p class="about__paragraph">— Не существует детской и взрослой поэзии. Существует мысль и чувство, зафиксированное в ней</p>
-                    <p class="about__paragraph">— Дети получают невероятное удовольствие и мотивацию от того, что их творчество востребовано сверстниками и взрослыми.</p>
+                    <h2 class="about__title">ТЕЗИСЫ.</h2>
+                    <p class="about__paragraph">• Дети никогда не прекращают творить и круто стараться быть на них похожими в этом.</p>
+                    <p class="about__paragraph">• Детское бессознательное помогает родителям понять, что происходит внутри семьи.</p>
+                    <p class="about__paragraph">• Не существует детской и взрослой поэзии. Существует мысль и чувство, зафиксированное в ней.</p>
+                    <p class="about__paragraph">• Дети получают невероятное удовольствие и мотивацию от того, что их творчество востребовано сверстниками и взрослыми.</p>
                 </section>
                 <section class="form">
-                    <h2 class="form__title">Форма</h2>
+                    <h2 class="about__title">ФОРМА.</h2>
+                    <h3 class="form__title">Заполняя эту форму, вы становитесь частью проекта.</h3>
                     <form class="form__container" action="#">
-                        <input class="form__input" type="text" placeholder="Имя и фамилия автора" required="required">
-                        <input class="form__input" type="email" placeholder="Почта" required="required">
-                        <input class="form__input" type="tel" placeholder="Телефон" required="required">
-                        <textarea class="form__textarea" type="text" placeholder="Стихи" required="required"></textarea>
+                        <input class="form__input" type="text" placeholder="Имя и фамилия автора" required minlength="5" maxlength="40">
+                        <input class="form__input" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Телефон в формате +7 (999) 999 99 99" required>
+                        <input class="form__input" type="email" placeholder="Почта" required>
+                        <textarea class="form__input form__textarea" type="text" placeholder="Стихи" required minlength="2"></textarea>
                         <div class="form__radio-container">
-                            <input class="form__radio" type="radio" value="agree">
-                            <p class="form__radio-offer">Согласен с <a class="form__radio-offer-link" href="#">офертой</a></p>
+                            <input class="form__radio" type="radio" value="agree" required>
+                            <span class="form__radio-offer">Согласен с <a class="form__radio-offer-link" href="#">офертой</a></span>
                         </div>
-                        <button class="form__submit-button">Отправить</button>
+                        <button class="form__submit-button">Отправить форму</button>
                     </form>
                 </section>
             </main>
             <footer class="footer">
-                <p class="footer__copyright">Copyright</p>
-                <p class="footer__copyright">Copyright</p>
+                <p class="footer__copyright">&COPY; Маршак, 2020.</p>
+                <p class="footer__copyright">Сделано студентами <a class="footer__copyright-link" href="#">Яндекс.Практикум</a></p>
             </footer>
         </div>
     </div>

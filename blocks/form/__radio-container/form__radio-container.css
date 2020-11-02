@@ -1,4 +1,12 @@
 .form__radio-container {
     display: flex;
     align-items: center;
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+@media screen and (max-width: 480px) {
+    .form__radio-container {
+        
+    }
 }

@@ -2,11 +2,12 @@
 @import url(./__header/root__header.css);
 @import url(./__main-footer/root__main-footer.css);
 
-
-header, span, div, nav, p, h1, h2, h3, h4, a, section, ul, li, img, iframe, input {
+/*
+header, span, div, nav, p, h1, h2, h3, h4, a, section, ul, li, img, iframe, input, textarea, button {
     outline: 1px solid;
     outline-color: red;
 }
+*/
 
 .root {
     font-family: 'Inter', Sans-serif, Arial;

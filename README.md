@@ -10,5 +10,4 @@
 3. Подключить проект к серверу
 4. Перенести проект на React
 
-**[Ссылка на проект][1]**
-[1]: https://konstantinovmax.github.io/turbina/index.html
+**[Ссылка на проект](https://konstantinovmax.github.io/turbina/index.html)**

@@ -4,7 +4,6 @@
 .about {
     width: 100%;
     padding-left: 51px;
-    padding-right: 449px;
     box-sizing: border-box;
     margin-top: 90px;
 }
@@ -12,7 +11,6 @@
 @media screen and (max-width: 1100px) {
     .about {
         padding-left: 50px;
-        padding-right: 274px;
     }
 }
 
@@ -25,8 +23,7 @@
 
 @media screen and (max-width: 640px) {
     .about {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0 20px;
         margin-top: 60px;
     }
 }

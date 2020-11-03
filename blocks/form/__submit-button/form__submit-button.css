@@ -16,6 +16,8 @@
 
 .form__submit-button:hover {
     font-style: italic;
+    opacity: 0.6;
+    transition: opacity ease .3s;
 }
 
 @media screen and (max-width: 1100px) {

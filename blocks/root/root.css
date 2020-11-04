@@ -1,15 +1,29 @@
 @import url(./__content/root__content.css);
-@import url(./__header/root__header.css);
-@import url(./__main-footer/root__main-footer.css);
 
-/*
-header, span, div, nav, p, h1, h2, h3, h4, a, section, ul, li, img, iframe, input, textarea, button {
+
+/* header, span, div, nav, p, h1, h2, h3, h4, a, section, ul, li, img, iframe, input, textarea, button {
     outline: 1px solid;
     outline-color: red;
-}
-*/
+} */
+
 
 .root {
     font-family: 'Inter', Sans-serif, Arial;
     color: #ffffff;
+    transition: all 0.1s ease;
+    background: linear-gradient(#FBD5E5, #ED9C9D, #465C82, #2A3A84);
+    background-size: 250% 250%;
+    animation: Gradient 30s ease infinite;
+}
+
+@keyframes Gradient {
+    0% {
+    background-position: 50% 100%
+    }
+    50% {
+    background-position: 100% 50%
+    }
+    100% {
+    background-position: 50% 100%
+    }
 }

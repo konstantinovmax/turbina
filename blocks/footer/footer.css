@@ -1,5 +1,6 @@
 @import url(./__copyright/footer__copyright.css);
 @import url(./__copyright-link/footer__copyright-link.css);
+@import url(./__span/footer__span.css);
 
 .footer {
     margin: 20px 15px;

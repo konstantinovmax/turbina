@@ -1,0 +1,28 @@
+.header__songs-release {
+    font: Inter;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: calc(100% - 10px);
+}
+
+.header__songs-release_closed {
+    display: none
+}
+
+@media screen and (max-width: 1024px) {
+    .header__songs-release {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__songs-release {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}

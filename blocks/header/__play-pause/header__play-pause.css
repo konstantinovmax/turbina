@@ -1,0 +1,27 @@
+.header__play-pause {
+    background: rgba(0, 0, 0, 0);
+    background-image: url(../../../images/play.svg);
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header__play-pause_pause {
+    background: rgba(0, 0, 0, 0);
+    background-image: url(../../../images/stop.svg);
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 480px) {
+    .header__play-pause {
+        width: 16px;
+        height: 16px;
+    }
+}

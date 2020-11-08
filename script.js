@@ -1,6 +1,7 @@
 const playPauseButton = document.querySelector('.header__play-pause')
 const openCloseButton = document.querySelector('.header__open-close')
 const songsContainer = document.querySelector('.header__songs-container')
+const playerContainer = document.querySelector('.header__song-player')
 const textReleaseButton = document.querySelector('.header__text-release')
 const progressBar = document.querySelector('.header__track-progress')
 const songsRelease = document.querySelector('.header__songs-release')
@@ -14,6 +15,7 @@ function playPauseToggler() {
 function openCloseToggler() {
     openCloseButton.classList.toggle('header__open-close_close');
     songsContainer.classList.toggle('header__songs-container_opened')
+    playerContainer.classList.toggle('header__song-player_opened')
     textReleaseButton.classList.toggle('header__text-release_opened')
     progressBar.classList.toggle('header__track-progress_short')
 }

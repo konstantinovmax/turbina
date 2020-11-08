@@ -1,8 +1,3 @@
-@import url(./_type/header__streamings_type-yandex.css);
-@import url(./_type/header__streamings_type-spotify.css);
-@import url(./_type/header__streamings_type-apple-music.css);
-@import url(./_type/header__streamings_type-vk-music.css);
-
 .header__streamings {
     position: absolute;
     top: 15px;

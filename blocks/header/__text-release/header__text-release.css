@@ -1,0 +1,31 @@
+.header__text-release {
+    width: 135px;
+    height: 35px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 20px;
+    outline: none;
+}
+
+.header__text-release_opened {
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .header__text-release {
+        display: none;
+        width: 240px;
+        height: 31px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

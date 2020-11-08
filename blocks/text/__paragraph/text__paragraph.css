@@ -1,0 +1,28 @@
+.text__paragraph {
+    margin: 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    max-width: 760px;
+    max-height: 352px;
+}
+
+.text__paragraph:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .text__paragraph {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text__paragraph {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 15px;
+    }
+}

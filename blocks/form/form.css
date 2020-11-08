@@ -11,5 +11,24 @@
 
 .form {
     width: 100%;
+    padding: 80px 354px 0 50px;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 1140px) {
+    .form {
+        padding-right: 180px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .form {
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .form {
+        padding: 60px 20px 0 20px;
+    }
 }

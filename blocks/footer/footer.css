@@ -1,6 +1,5 @@
 @import url(./__copyright/footer__copyright.css);
-@import url(./__author/footer__author.css);
-@import url(./__author-link/footer__author-link.css);
+@import url(./__copyright-link/footer__copyright-link.css);
 @import url(./__span/footer__span.css);
 
 .footer {

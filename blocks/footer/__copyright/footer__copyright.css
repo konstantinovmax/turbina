@@ -15,7 +15,12 @@
     .footer__copyright {
         font-size: 12px;
         line-height: 15px;
+        margin-top: 5px;
         width: 310px;
         text-align: center;
     }
+}
+
+.footer__copyright:first-child {
+    margin-bottom: 0;
 }

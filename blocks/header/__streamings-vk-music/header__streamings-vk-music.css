@@ -1,0 +1,17 @@
+.header__streamings-vk-music {
+    width: 131px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+    .header__streamings-vk-music {
+        width: 100px;
+        height: 29px;
+    }
+}

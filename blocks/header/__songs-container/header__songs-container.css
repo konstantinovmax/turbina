@@ -1,0 +1,17 @@
+.header__songs-container {
+    display: none;
+    width: calc(100% - 2*35px);
+    max-height: 104px;
+    min-height: 104px;
+    margin-top: 28px;
+}
+
+.header__songs-container_opened {
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .header__songs-container {
+        width: calc(100% - 2*15px);
+    }
+}

@@ -1,0 +1,23 @@
+.header__song-name {
+    font: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.2px;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__song-name {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__song-name {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}

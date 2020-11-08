@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,11 @@
     <meta name="description" content="Проект Турбина">
     <meta name="keywords" content="турбина">
     <meta name="author" content="Команда №8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+    <script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
 </head>
+
 <body class="root">
     <div class="root__content">
         <header class="header">
@@ -18,28 +23,28 @@
             <ul class="header__streamings">
                 <li class="header__streaming-container">
                     <a class="header__streaming-link" href="#">
-                        <div class="header__streamings_type-yandex">
+                        <div class="header__streamings-yandex">
                             <p class="header__streaming-title" href="#">Яндекс.Музыка ↗</p>
                         </div>
                     </a>
                 </li>
                 <li class="header__streaming-container">
                     <a class="header__streaming-link" href="#">
-                        <div class="header__streamings_type-spotify">
+                        <div class="header__streamings-spotify">
                             <p class="header__streaming-title" href="#">Spotify ↗</p>
                         </div>
                     </a>
                 </li>
                 <li class="header__streaming-container">
                     <a class="header__streaming-link" href="#">
-                        <div class="header__streamings_type-apple-music">
+                        <div class="header__streamings-apple-music">
                             <p class="header__streaming-title" href="#">Apple Music ↗</p>
                         </div>
                     </a>
                 </li>
                 <li class="header__streaming-container">
                     <a class="header__streaming-link" href="#">
-                        <div class="header__streamings_type-vk-music">
+                        <div class="header__streamings-vk-music">
                             <p class="header__streaming-title" href="#">VK Music ↗</p>
                         </div>
                     </a>
@@ -48,36 +53,112 @@
             <h1 class="header__title">
                 <img class="header__image" src="./images/header-image.png" alt="Турбина">
             </h1>
-            <div class="header__song-player"></div>
+            <div class="header__song-player">
+                <!-- <audio controls src="./music/apocalypse.mp3" style: display="none">
+                        Your browser does not support the element.
+                    </audio> -->
+                <div id="audio-controls" class="header__controls" data-state="hidden">
+                    <div class="header__wrapper">
+                        <button id="playpause" class="header__play-pause" type="button" data-state="play"></button>
+                        <h3 class="header__song-name">Song title</h3>
+                    </div>
+                    <div class="header__wrapper">
+                        <h3 class="header__song-duration">5:00</h3>
+                        <button id="textrelease" class="header__text-release" type="button">Релизы</button>
+                        <button id="open" class="header__open-close" type="button" data-state="open"></button>
+                    </div>
+                </div>
+                <progress class="header__track-progress" id="progress" value="0" min="0">
+                    <span id="progress-bar"></span>
+                </progress>
+                <div class="header__songs-container" data-mcs-theme="minimal">
+                    <h3 class="header__songs-release">Apocalypse</h3>
+                    <h3 class="header__songs-text">You leapt from crumbling bridges watching cityscapes turn
+                        to&nbsp;dust
+                        Filming helicopters crashing in&nbsp;the ocean from way above
+
+                        Got the music in&nbsp;you baby,
+                        Tell me&nbsp;why
+                        Got the music in&nbsp;you baby,
+                        Tell me&nbsp;why
+                        You&rsquo;ve been locked in&nbsp;here forever &amp;&nbsp;you just can&rsquo;t say goodbye
+
+                        Kisses on&nbsp;the foreheads of&nbsp;the lovers wrapped in&nbsp;your arms
+                        You&rsquo;ve been hiding them in&nbsp;hollowed out pianos left in&nbsp;the dark...
+
+                        Your lips,
+                        My&nbsp;lips,
+                        Apocalypse
+
+                        Go&nbsp;&amp;&nbsp;sneak&nbsp;us through the rivers,
+                        Flood is&nbsp;rising up&nbsp;on&nbsp;your knees
+                        Oh&nbsp;please...
+                        Come out &amp;&nbsp;haunt me
+                        I&nbsp;know you want me
+                        Come out &amp;&nbsp;haunt me
+
+                        Sharing all your secrets with each other since you were kids
+                        Sleeping soundly with the locket that she gave you clutched in&nbsp;your fist...
+
+                        When you&rsquo;re all alone
+                        I&nbsp;will reach for you
+                        When you&rsquo;re feeling low
+                        I&nbsp;will be&nbsp;there too</h3>
+
+                </div>
+
+            </div>
         </header>
         <main class="content">
-            <article class="about">
-                <h2 class="about__title">О ПРОЕКТЕ.</h2>
-                <p class="about__paragraph">Мы знаем, что наши дети постоянно существуют в режиме непрекращающегося творческого процесса. Мы видим это, когда ребёнок что-то напевает, когда он бесконечно рисует, когда придумывает истории, когда разговаривает с едой и игрушками — дети постоянно включены и что-то изобретают. Родители часто недооценивают это спонтанное творчество ребёнка. Это не плохо, просто мы привыкаем к этому. Давайте попробуем внимательнее присмотреться к нашим детям.</p>
-                <p class="about__paragraph">Мы запускаем проект «ТУРБИНА», который открывает работу настоящего музыкального лейбла на базе «Маршака». В рамках «ТУРБИНЫ» лучшие современные инди-музыканты пишут свои песни на стихи, написанные детьми. Здесь важно — мы не заставляем наших детей садиться и писать поэзию, мы говорим о том, что родителям стоит быть более внимательными и чуткими к своим детям. Именно так мы сможем получить тексты, которые перестанут быть детскими, не будут осмыслены как взрослые — поэзия, которая сокращает дистанцию между взрослостью и детством, где спонтанное детское творчество и бессознательное, замеченное родителем, становится общественным культурным достоянием.</p>
+            <article class="text">
+                <h2 class="text__title">О ПРОЕКТЕ.</h2>
+                <p class="text__paragraph">Мы знаем, что наши дети постоянно существуют в режиме непрекращающегося
+                    творческого процесса. Мы видим это, когда ребёнок что-то напевает, когда он бесконечно рисует, когда
+                    придумывает истории, когда разговаривает с едой и игрушками — дети постоянно включены и что-то
+                    изобретают. Родители часто недооценивают это спонтанное творчество ребёнка. Это не плохо, просто мы
+                    привыкаем к этому. Давайте попробуем внимательнее присмотреться к нашим детям.</p>
+                <p class="text__paragraph">Мы запускаем проект «ТУРБИНА», который открывает работу настоящего
+                    музыкального лейбла на базе «Маршака». В рамках «ТУРБИНЫ» лучшие современные инди-музыканты пишут
+                    свои песни на стихи, написанные детьми. Здесь важно — мы не заставляем наших детей садиться и писать
+                    поэзию, мы говорим о том, что родителям стоит быть более внимательными и чуткими к своим детям.
+                    Именно так мы сможем получить тексты, которые перестанут быть детскими, не будут осмыслены как
+                    взрослые — поэзия, которая сокращает дистанцию между взрослостью и детством, где спонтанное детское
+                    творчество и бессознательное, замеченное родителем, становится общественным культурным достоянием.
+                </p>
             </article>
-            <article class="about">
-                <h2 class="about__title">КАК ЭТО РАБОТАЕТ?</h2>
-                <p class="about__paragraph">Вы можете прислать нам тексты, родившиеся у ваших детей, которые вы записали и считаете, что это сильное высказывание. Мы собираем пул таких текстов и передаём их музыкантам. Артисты создают музыку на эти стихи. Мы продюсируем выпуск трека, возможно съёмки клипа и так далее. Мы всегда указываем автора стихотворений внутри релиза: Хадн Дадн feat. Варя Карпова и Федя Быстров — Контур.</p>
+            <article class="text">
+                <h2 class="text__title">КАК ЭТО РАБОТАЕТ?</h2>
+                <p class="text__paragraph">Вы можете прислать нам тексты, родившиеся у ваших детей, которые вы записали
+                    и считаете, что это сильное высказывание. Мы собираем пул таких текстов и передаём их музыкантам.
+                    Артисты создают музыку на эти стихи. Мы продюсируем выпуск трека, возможно съёмки клипа и так далее.
+                    Мы всегда указываем автора стихотворений внутри релиза: Хадн Дадн feat. Варя Карпова и Федя Быстров
+                    — Контур.</p>
             </article>
-            <article class="about">
-                <h2 class="about__title">ТЕЗИСЫ.</h2>
-                <p class="about__paragraph">• Дети никогда не прекращают творить и круто стараться быть на них похожими в этом.</p>
-                <p class="about__paragraph">• Детское бессознательное помогает родителям понять, что происходит внутри семьи.</p>
-                <p class="about__paragraph">• Не существует детской и взрослой поэзии. Существует мысль и чувство, зафиксированное в ней.</p>
-                <p class="about__paragraph">• Дети получают невероятное удовольствие и мотивацию от того, что их творчество востребовано сверстниками и взрослыми.</p>
+            <article class="text">
+                <h2 class="text__title">ТЕЗИСЫ.</h2>
+                <p class="text__paragraph">• Дети никогда не прекращают творить и круто стараться быть на них похожими
+                    в этом.</p>
+                <p class="text__paragraph">• Детское бессознательное помогает родителям понять, что происходит внутри
+                    семьи.</p>
+                <p class="text__paragraph">• Не существует детской и взрослой поэзии. Существует мысль и чувство,
+                    зафиксированное в ней.</p>
+                <p class="text__paragraph">• Дети получают невероятное удовольствие и мотивацию от того, что их
+                    творчество востребовано сверстниками и взрослыми.</p>
             </article>
             <article class="form">
-                <h2 class="form__title about__title">ФОРМА.</h2>
+                <h2 class="form__title">ФОРМА.</h2>
                 <h3 class="form__subtitle">Заполняя эту форму, вы становитесь частью проекта.</h3>
                 <form name="form-turbina" class="form__container" action="#">
-                    <input class="form__input" type="text" placeholder="Имя и фамилия автора" required minlength="5" maxlength="40">
-                    <input class="form__input" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Телефон в формате +7 (999) 999 99 99" required>
+                    <input class="form__input" type="text" placeholder="Имя и фамилия автора" required minlength="5"
+                        maxlength="40">
+                    <input class="form__input" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                        placeholder="Телефон в формате +7 (999) 999 99 99" required>
                     <input class="form__input" type="email" placeholder="Почта" required>
                     <textarea class="form__input form__textarea" placeholder="Стихи" required minlength="2"></textarea>
                     <div class="form__radio-container">
                         <input class="form__radio" type="radio" value="agree" required>
-                        <span class="form__radio-offer">Согласен с <a class="form__radio-offer-link" href="#">офертой</a></span>
+                        <span class="form__radio-offer">Согласен с <a class="form__radio-offer-link"
+                                href="#">офертой</a></span>
                     </div>
                     <button class="form__submit-button">Отправить форму</button>
                 </form>
@@ -85,9 +166,16 @@
         </main>
         <footer class="footer">
             <p class="footer__copyright">&COPY; Маршак, 2020.</p>
-            <p class="footer__copyright">Сделано студентами <span class="footer__span"><a class="footer__copyright-link" href="#">Яндекс.Практикум</a></span></p>
+            <p class="footer__author">Сделано студентами 
+                <span class="footer__span">
+                    <a class="footer__author-link" href="#">Яндекс.Практикум</a>
+                </span>
+            </p>
         </footer>
     </div>
     <script src="./pages/index.js"></script>
+    <script src="./jquery.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

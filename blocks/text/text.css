@@ -1,0 +1,21 @@
+@import url(./__title/text__title.css);
+@import url(./__paragraph/text__paragraph.css);
+
+.text {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 90px;
+    
+}
+
+@media screen and (max-width: 920px) {
+    .text {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .text {
+        margin-bottom: 60px;
+    }
+}

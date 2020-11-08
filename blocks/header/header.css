@@ -19,11 +19,13 @@
 @import url(./__logo-link/header__logo-link.css);
 @import url(./__streaming-container/header__streaming-container.css);
 @import url(./__streaming-link/header__streaming-link.css);
+@import url(./__streamings-yandex/header__streamings-yandex.css);
+@import url(./__streamings-spotify/header__streamings-spotify.css);
+@import url(./__streamings-apple-music/header__streamings-apple-music.css);
+@import url(./__streamings-vk-music/header__streamings-vk-music.css);
 
 .header {
-    height: 100vh;
-    min-height: 600px;
-    max-height: 780px;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;

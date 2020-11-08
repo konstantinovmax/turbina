@@ -25,7 +25,7 @@
 @import url(./__streamings-vk-music/header__streamings-vk-music.css);
 
 .header {
-    min-height: 700px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

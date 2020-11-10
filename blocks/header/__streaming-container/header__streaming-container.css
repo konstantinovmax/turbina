@@ -1,9 +1,0 @@
-.header__streaming-container {
-    display: flex;
-}
-
-.header__streaming-container:hover {
-    opacity: 0.6;
-    transition: opacity ease .3s;
-}
-

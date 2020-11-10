@@ -16,6 +16,11 @@
     outline: none;
 }
 
+.header__text-release:hover {
+    opacity: 0.6;
+    transition: opacity ease .3s;
+}
+
 .header__text-release_opened {
     display: flex;
 }

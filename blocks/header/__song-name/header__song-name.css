@@ -6,12 +6,17 @@
     margin-left: 20px;
     margin-top: 0;
     margin-bottom: 0;
+    max-width: 60vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @media screen and (max-width: 1024px) {
     .header__song-name {
         font-size: 18px;
         line-height: 22px;
+        max-width: 55vw;
     }
 }
 
@@ -19,5 +24,6 @@
     .header__song-name {
         font-size: 14px;
         line-height: 19px;
+        max-width: 50vw;
     }
 }

@@ -10,6 +10,11 @@
     outline: none;
 }
 
+.header__play-pause:hover {
+    opacity: 0.6;
+    transition: opacity ease .3s;
+}
+
 .header__play-pause_pause {
     background: rgba(0, 0, 0, 0);
     background-image: url(../../../images/stop.svg);

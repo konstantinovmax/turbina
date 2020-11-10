@@ -10,6 +10,11 @@
     outline: none;
 }
 
+.header__open-close:hover {
+    opacity: 0.6;
+    transition: opacity ease .3s;
+}
+
 .header__open-close_close {
     background: rgba(0, 0, 0, 0);
     background-image: url(../../../images/close.svg);

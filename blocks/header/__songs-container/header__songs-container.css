@@ -4,6 +4,7 @@
     min-height: 104px;
     margin-top: 28px;
     opacity: 0;
+    align-self: center;
    
     transition: opacity 1s ease-in-out;
     -webkit-transition: opacity 1s  ease-in-out;

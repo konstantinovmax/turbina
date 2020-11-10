@@ -27,9 +27,10 @@
 
 @media screen and (max-width: 480px) {
     .header__text-release {
-        display: none;
-        width: 240px;
+        display: flex;
+        width: 161px;
         height: 31px;
+        margin-right: 0;
         font-size: 12px;
         line-height: 15px;
     }

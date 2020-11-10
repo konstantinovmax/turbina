@@ -18,96 +18,117 @@
 <body class="root">
     <div class="root__content">
         <header class="header">
-            <a class="header__logo-link" href="https://marshakbooks.ru/" target="_blank">
-                <img class="header__logo" src="./images/header-logo.png" alt="Логотип проекта Турбина">
-            </a>
-            <ul class="header__streamings">
-                <li class="header__streaming-container">
-                    <a class="header__streaming-link" href="#">
-                        <div class="header__streamings-yandex">
-                            <p class="header__streaming-title" href="#">Яндекс.Музыка ↗</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="header__streaming-container">
-                    <a class="header__streaming-link" href="#">
-                        <div class="header__streamings-spotify">
-                            <p class="header__streaming-title" href="#">Spotify ↗</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="header__streaming-container">
-                    <a class="header__streaming-link" href="#">
-                        <div class="header__streamings-apple-music">
-                            <p class="header__streaming-title" href="#">Apple Music ↗</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="header__streaming-container">
-                    <a class="header__streaming-link" href="#">
-                        <div class="header__streamings-vk-music">
-                            <p class="header__streaming-title" href="#">VK Music ↗</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            <div class="header__blur">
+                <a class="header__logo-link" href="https://marshakbooks.ru/" target="_blank">
+                    <img class="header__logo" src="./images/header-logo.png" alt="Логотип проекта Турбина">
+                </a>
+                <ul class="header__streamings">
+                    <button class="header__streamings-button" type="button">Стриминги</button>
+                    <div class="header__streaming-button-container">
+
+                        <li class="header__streaming-container">
+                            <a class="header__streaming-link" href="#">
+                                <div class="header__streamings-yandex">
+                                    <p class="header__streaming-title" href="#">Яндекс.Музыка ↗</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__streaming-container">
+                            <a class="header__streaming-link" href="#">
+                                <div class="header__streamings-spotify">
+                                    <p class="header__streaming-title" href="#">Spotify ↗</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__streaming-container">
+                            <a class="header__streaming-link" href="#">
+                                <div class="header__streamings-apple-music">
+                                    <p class="header__streaming-title" href="#">Apple Music ↗</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__streaming-container">
+                            <a class="header__streaming-link" href="#">
+                                <div class="header__streamings-vk-music">
+                                    <p class="header__streaming-title" href="#">VK Music ↗</p>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            
             <h1 class="header__title">
                 <img class="header__image" src="./images/header-image.png" alt="Турбина">
             </h1>
+            </div>
             <div class="header__song-player">
                 <!-- <audio controls src="./music/apocalypse.mp3" style: display="none">
                         Your browser does not support the element.
                     </audio> -->
-                <div id="audio-controls" class="header__controls" data-state="hidden">
-                    <div class="header__wrapper">
-                        <button id="playpause" class="header__play-pause" type="button" data-state="play"></button>
-                        <h3 class="header__song-name">Song title</h3>
-                    </div>
-                    <div class="header__wrapper">
-                        <h3 class="header__song-duration">5:00</h3>
-                        <button id="textrelease" class="header__text-release" type="button">Релизы</button>
-                        <button id="open" class="header__open-close" type="button" data-state="open"></button>
+                <div class="header__album-wrapper">
+                    <img class="header__album-cover" src="./images/cover.jpg" alt="Обложка альбома">
+                    <div class="header__content-wrapper">
+                        <div id="audio-controls" class="header__controls" data-state="hidden">
+                            <div class="header__button-wrapper">
+                                <button id="playpause" class="header__play-pause" type="button"
+                                    data-state="play"></button>
+                                <h3 class="header__song-name">Song title</h3>
+                            </div>
+                            <div class="header__button-wrapper">
+                                <h3 class="header__song-duration">5:00</h3>
+                                <div class="header__desktop-button-wrapper">
+                                <button class="header__video-button" type="button"></button>
+                                <button id="textrelease" class="header__text-release" type="button">Релизы</button>
+                                </div>
+                                <button id="open" class="header__open-close" type="button" data-state="open"></button>
+                            </div>
+                        </div>
+                        <progress class="header__track-progress" id="progress" value="0" min="0">
+                            <span id="progress-bar"></span>
+                        </progress>
+                        <div class="header__mobile-button-wrapper">
+                            <button class="header__video-button" type="button"></button>
+                            <button id="textrelease" class="header__text-release" type="button">Релизы</button>
+                        </div>
+                        <img class="header__album-cover-mobile" src="./images/cover.jpg" alt="Обложка альбома">
+                        <div class="header__songs-container" data-mcs-theme="minimal">
+                            <h3 class="header__songs-release">Apocalypse and..</h3>
+                            <h3 class="header__songs-text">You leapt from crumbling bridges watching cityscapes turn
+                                to&nbsp;dust
+                                Filming helicopters crashing in&nbsp;the ocean from way above
+
+                                Got the music in&nbsp;you baby,
+                                Tell me&nbsp;why
+                                Got the music in&nbsp;you baby,
+                                Tell me&nbsp;why
+                                You&rsquo;ve been locked in&nbsp;here forever &amp;&nbsp;you just can&rsquo;t say
+                                goodbye
+
+                                Kisses on&nbsp;the foreheads of&nbsp;the lovers wrapped in&nbsp;your arms
+                                You&rsquo;ve been hiding them in&nbsp;hollowed out pianos left in&nbsp;the dark...
+
+                                Your lips,
+                                My&nbsp;lips,
+                                Apocalypse
+
+                                Go&nbsp;&amp;&nbsp;sneak&nbsp;us through the rivers,
+                                Flood is&nbsp;rising up&nbsp;on&nbsp;your knees
+                                Oh&nbsp;please...
+                                Come out &amp;&nbsp;haunt me
+                                I&nbsp;know you want me
+                                Come out &amp;&nbsp;haunt me
+
+                                Sharing all your secrets with each other since you were kids
+                                Sleeping soundly with the locket that she gave you clutched in&nbsp;your fist...
+
+                                When you&rsquo;re all alone
+                                I&nbsp;will reach for you
+                                When you&rsquo;re feeling low
+                                I&nbsp;will be&nbsp;there too</h3>
+
+                        </div>
                     </div>
                 </div>
-                <progress class="header__track-progress" id="progress" value="0" min="0">
-                    <span id="progress-bar"></span>
-                </progress>
-                <div class="header__songs-container" data-mcs-theme="minimal">
-                    <h3 class="header__songs-release">Apocalypse and..</h3>
-                    <h3 class="header__songs-text">You leapt from crumbling bridges watching cityscapes turn
-                        to&nbsp;dust
-                        Filming helicopters crashing in&nbsp;the ocean from way above
-
-                        Got the music in&nbsp;you baby,
-                        Tell me&nbsp;why
-                        Got the music in&nbsp;you baby,
-                        Tell me&nbsp;why
-                        You&rsquo;ve been locked in&nbsp;here forever &amp;&nbsp;you just can&rsquo;t say goodbye
-
-                        Kisses on&nbsp;the foreheads of&nbsp;the lovers wrapped in&nbsp;your arms
-                        You&rsquo;ve been hiding them in&nbsp;hollowed out pianos left in&nbsp;the dark...
-
-                        Your lips,
-                        My&nbsp;lips,
-                        Apocalypse
-
-                        Go&nbsp;&amp;&nbsp;sneak&nbsp;us through the rivers,
-                        Flood is&nbsp;rising up&nbsp;on&nbsp;your knees
-                        Oh&nbsp;please...
-                        Come out &amp;&nbsp;haunt me
-                        I&nbsp;know you want me
-                        Come out &amp;&nbsp;haunt me
-
-                        Sharing all your secrets with each other since you were kids
-                        Sleeping soundly with the locket that she gave you clutched in&nbsp;your fist...
-
-                        When you&rsquo;re all alone
-                        I&nbsp;will reach for you
-                        When you&rsquo;re feeling low
-                        I&nbsp;will be&nbsp;there too</h3>
-
-                </div>
-
             </div>
         </header>
         <main class="content">
@@ -167,7 +188,7 @@
         </main>
         <footer class="footer">
             <p class="footer__copyright">&COPY; Маршак, 2020.</p>
-            <p class="footer__author">Сделано студентами 
+            <p class="footer__author">Сделано студентами
                 <span class="footer__span">
                     <a class="footer__author-link" href="#">Яндекс.Практикум</a>
                 </span>

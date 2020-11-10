@@ -1,0 +1,13 @@
+.header__desktop-button-wrapper {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .header__desktop-button-wrapper {
+        display: none;
+        
+    }
+}

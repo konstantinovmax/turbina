@@ -1,0 +1,31 @@
+.header__streamings-button {
+    width: 98px;
+    height: 29px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 12px;
+    line-height: 15px;
+    outline: none;
+}
+
+@media screen and (max-width: 480px) {
+    .header__streamings-button {
+        display: flex;
+    }
+}
+
+.header__streamings-button_active {
+    width: 29px;
+    height: 29px;
+    display: flex;
+    background-image: url(../../../images/cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}

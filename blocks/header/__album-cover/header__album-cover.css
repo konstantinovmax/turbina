@@ -1,0 +1,40 @@
+.header__album-cover {
+    display: none;
+    width: 176px;
+    height: 176px;
+    margin-right: 25px;
+    border-radius: 4px;
+}
+
+.header__album-cover_opened {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-in-out;
+    -webkit-transition: opacity .8s ease-in-out;
+    -moz-transition: opacity .8s ease-in-out;
+}
+
+.header__album-cover_opened_visible {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .8s ease-in-out;
+    -webkit-transition: opacity .8s ease-in-out;
+    -moz-transition: opacity .8s ease-in-out;
+}
+
+@media screen and (max-width: 720px) {
+    .header__album-cover {
+        width: 112px;
+        height: 112px;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__album-cover {
+        display: none;
+    }
+}

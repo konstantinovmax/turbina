@@ -3,6 +3,7 @@
     border-radius: 10px;
     margin: -10px 10px 0 10px;
     padding: 110px 0 110px 51px;
+    z-index: 2;
 }
 
 @media screen and (max-width: 1100px) {

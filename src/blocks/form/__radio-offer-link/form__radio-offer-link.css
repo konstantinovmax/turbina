@@ -1,0 +1,8 @@
+.form__radio-offer-link {
+    color: #000000;
+}
+
+.form__radio-offer-link:hover {
+    opacity: 0.6;
+    transition: opacity ease .3s;
+}

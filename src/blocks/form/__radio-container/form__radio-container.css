@@ -1,0 +1,6 @@
+.form__radio-container {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    max-width: 600px;
+}

@@ -1,0 +1,27 @@
+.header__songs-container {
+    width: calc(100% - 2*35px);
+    max-height: 104px;
+    min-height: 104px;
+    margin-top: 28px;
+    opacity: 0;
+    align-self: center;
+   
+    transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s  ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+}
+
+.header__songs-container_opened {
+    display: flex;
+    
+    opacity: 1;
+    transition: opacity ease 0.5s;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+    .header__songs-container {
+        width: calc(100% - 2*15px);
+    }
+}

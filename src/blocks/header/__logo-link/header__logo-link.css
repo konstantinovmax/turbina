@@ -1,0 +1,12 @@
+.header__logo-link {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .header__logo-link {
+        left: 12px;
+        top: 11px;
+    }
+}

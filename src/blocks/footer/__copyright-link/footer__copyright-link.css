@@ -1,0 +1,8 @@
+.footer__copyright-link {
+    color: #ffffff;
+}
+
+.footer__copyright-link:hover {
+    opacity: 0.6;
+    transition: opacity ease .3s;
+}

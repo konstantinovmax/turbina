@@ -10,6 +10,7 @@
     box-sizing: border-box;
     margin-right: 10px;
     outline: none;
+    cursor: pointer;
 }
 
 .header__video-button:hover {
@@ -21,7 +22,7 @@
     display: flex;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 694px) {
     .header__video-button {
         display: flex;
         margin-right: 5px;

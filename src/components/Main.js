@@ -42,10 +42,10 @@ function Main() {
                 <h2 className="form__title">ФОРМА.</h2>
                 <h3 className="form__subtitle">Заполняя эту форму, вы становитесь частью проекта.</h3>
                 <form name="form-turbina" className="form__container" action="#">
-                    <input className="form__input" type="text" placeholder="Имя и фамилия автора" required minlength="5" maxlength="40" />
+                    <input className="form__input" type="text" placeholder="Имя и фамилия автора" required minLength="5" maxLength="40" />
                     <input className="form__input" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Телефон в формате +7 (999) 999 99 99" required />
                     <input className="form__input" type="email" placeholder="Почта" required />
-                    <textarea className="form__input form__textarea" placeholder="Стихи" required minlength="2"></textarea>
+                    <textarea className="form__input form__textarea" placeholder="Стихи" required minLength="2"></textarea>
                     <div className="form__radio-container">
                         <input className="form__radio" type="radio" value="agree" required />
                         <span className="form__radio-offer">Согласен с <a className="form__radio-offer-link" href="#">офертой</a></span>

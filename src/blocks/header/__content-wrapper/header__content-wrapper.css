@@ -8,7 +8,7 @@
     width: calc(100% - 176px);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 694px) {
     .header__content-wrapper {
         width: 100%;
     }

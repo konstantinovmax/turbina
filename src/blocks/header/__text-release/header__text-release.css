@@ -14,6 +14,7 @@
     line-height: 19px;
     margin-right: 20px;
     outline: none;
+    cursor: pointer;
 }
 
 .header__text-release:hover {
@@ -25,7 +26,7 @@
     display: flex;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 694px) {
     .header__text-release {
         display: flex;
         width: 161px;

@@ -33,7 +33,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 694px) {
     .header__album-cover {
         display: none;
     }

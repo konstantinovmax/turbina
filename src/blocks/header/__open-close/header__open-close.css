@@ -8,6 +8,7 @@
     background-position: center;
     background-size: contain;
     outline: none;
+    cursor: pointer;
 }
 
 .header__open-close:hover {

@@ -40,7 +40,7 @@ function App() {
     trackProgress();
     makeBlur();
 
-    // КОСТЫЛЬ. Необходимо провести рефакторинг нижеописанного кода (строки 41-43)
+    // КОСТЫЛЬ. Необходимо провести рефакторинг нижеописанного кода (строки 44-47)
     if (document.documentElement.clientWidth > 480) {
       showCover()
     }
@@ -88,7 +88,7 @@ function App() {
     closeSongRelease();
     openSongsText();
 
-    // КОСТЫЛЬ. Необходимо провести рефакторинг нижеописанного кода (строки 85-93)
+    // КОСТЫЛЬ. Необходимо провести рефакторинг нижеописанного кода (строки 92-100)
     const textReleaseButton = document.querySelectorAll('.header__text-release');
     textReleaseButton.forEach((item) => {
       if (item.textContent === 'Релизы') {
@@ -112,7 +112,7 @@ function App() {
 
   /*---------------------------------------------Функция для трансформации кнопки "Стриминги" на мобилках---------------------------------------------*/
 
-  // КОСТЫЛЬ. Функция написана в императивном стиле, необходимо переписать в декларативном стиле (строки 107-120)
+  // КОСТЫЛЬ. Функция написана в императивном стиле, необходимо переписать в декларативном стиле (строки 116-128)
   function streamingsButtonToggler() {
     const streamingsButton = document.querySelector('.header__streamings-button');
     const streamings = document.querySelector('.header__streaming-button-container');

@@ -18,6 +18,7 @@
 @import url(./__album-cover/header__album-cover.css);
 @import url(./__album-cover-mobile/header__album-cover-mobile.css);
 @import url(./__track-progress/header__track-progress.css);
+@import url(./__progress-bar/header__progress-bar.css);
 @import url(./__songs-container/header__songs-container.css);
 @import url(./__songs-text/header__songs-text.css);
 @import url(./__text-release/header__text-release.css);

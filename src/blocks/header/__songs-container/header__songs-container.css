@@ -5,7 +5,8 @@
     margin-top: 28px;
     opacity: 0;
     align-self: center;
-   
+    overflow: hidden;
+    
     transition: opacity 1s ease-in-out;
     -webkit-transition: opacity 1s  ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
@@ -13,7 +14,7 @@
 
 .header__songs-container_opened {
     display: flex;
-    
+    flex-direction: column;
     opacity: 1;
     transition: opacity ease 0.5s;
     -webkit-transition: opacity 0.5s ease-in-out;

@@ -12,6 +12,28 @@ function ContactForm() {
         poems: ""
     })
 
+   const [errors, setErrors] = useState({
+       fullName:{
+           required: true,
+           minLength: true,
+       },
+       phoneNumber:{
+           required: true,
+           minLength: true,
+           containNumbers: true
+       },
+       email: {
+        required: true,
+        minLength: true,
+       },
+       poems: {
+        required: true,
+        minLength: true,
+       }
+   })
+
+
+
     return(
         <article className="form">
         <h2 className="form__title">ФОРМА.</h2>

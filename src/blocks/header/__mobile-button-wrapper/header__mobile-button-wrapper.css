@@ -4,10 +4,10 @@
     margin: auto;
     margin-top: 20px;
     width: 240px;
-    justify-content: center;
+    
 }
 
-@media screen and (max-width: 694px) {
+@media screen and (max-width: 620px) {
     .header__mobile-button-wrapper {
         display: flex;
     }

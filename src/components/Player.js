@@ -33,7 +33,7 @@ const Player = (props) => {
             style={{ display: 'none' }}>
         </audio>
         <div className="header__album-wrapper">
-            <img className={`header__album-cover ${props.isShowCover && 'header__album-cover_opened' && 'header__album-cover_opened_visible'}`} src={currentTrack.cover} alt="Обложка альбома" />
+            
             <div className={`header__content-wrapper ${props.isOpenContentWrapper && 'header__content-wrapper_opened'}`}>
                 <div id="audio-controls" className="header__controls" data-state="hidden">
                     <div className="header__button-wrapper">
@@ -68,26 +68,29 @@ const Player = (props) => {
                     onClick={time => { myPlayer.current.currentTime = time }}
                     isTrackProgress={props.isTrackProgress}
                 />
+                <img className={`header__album-cover-mobile ${props.isShowCover && 'header__album-cover-mobile_opened' && 'header__album-cover-mobile_opened_visible'}`} src={currentTrack.cover} alt="Обложка альбома" />
                 <div className="header__mobile-button-wrapper">
                     <button className={`header__video-button ${props.isOpenVideoButton && currentTrack.link && 'header__video-button_opened'}`} ></button>
                     <button id="textrelease" className={`header__text-release ${props.isOpenTextRelease && 'header__text-release_opened'}`} type="button" onClick={props.onOpenCloseTextButton}>{props.isOpenSongsText ? 'Релизы' : 'Текст песни'}</button>
                 </div>
-                <img className={`header__album-cover-mobile ${props.isShowCover && 'header__album-cover-mobile_opened' && 'header__album-cover-mobile_opened_visible'}`} src={currentTrack.cover} alt="Обложка альбома" />
-                <Scrollbars className={`header__songs-container ${props.isOpenSongsContainer && 'header__songs-container_opened'}`}>
-                    <h3 className='header__songs-release' style={props.isOpenSongsText ? { display: 'none' } : { display: 'block' }}>{props.isOpenTextRelease ? 'Релизы:' : ''}</h3>
-                    {playList.map(item => <PlayListItem
-                        item={item}
-                        key={item.id}
-                        isOpenSongsContainer={props.isOpenSongsContainer}
-                        isCloseSongRelease={props.isCloseSongRelease}
-                        isOpenSongsText={props.isOpenSongsText}
-                        onClick={item => {
-                            setCurrentTrack(item)
-                            setIsPlaying(false)
-                        }}
-                    />)}
-                    <h3 className={`header__songs-text ${props.isOpenSongsText && 'header__songs-text_opened'}`}><pre>{currentTrack.text}</pre></h3>
-                </Scrollbars>
+                <div className="header__cover-songs-container">
+                <img className={`header__album-cover ${props.isShowCover && 'header__album-cover_opened' && 'header__album-cover_opened_visible'}`} src={currentTrack.cover} alt="Обложка альбома" />
+                    <Scrollbars className={`header__songs-container ${props.isOpenSongsContainer && 'header__songs-container_opened'}`}>
+                        <h3 className='header__songs-release-title' style={props.isOpenSongsText ? { display: 'none' } : { display: 'block' }}>{props.isOpenTextRelease ? 'Релизы:' : ''}</h3>
+                        {playList.map(item => <PlayListItem
+                            item={item}
+                            key={item.id}
+                            isOpenSongsContainer={props.isOpenSongsContainer}
+                            isCloseSongRelease={props.isCloseSongRelease}
+                            isOpenSongsText={props.isOpenSongsText}
+                            onClick={item => {
+                                setCurrentTrack(item)
+                                setIsPlaying(false)
+                            }}
+                        />)}
+                        <h3 className={`header__songs-text ${props.isOpenSongsText && 'header__songs-text_opened'}`}><pre>{currentTrack.text}</pre></h3>
+                    </Scrollbars>
+                </div>
             </div>
         </div>
 

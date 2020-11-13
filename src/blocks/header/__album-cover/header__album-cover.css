@@ -2,18 +2,22 @@
     display: none;
     width: 176px;
     height: 176px;
-    margin: auto;
-    margin-right: 25px;
+    align-self: center;
+    margin-right: 27px;
     border-radius: 4px;
     object-fit: cover;
-
+    opacity: 0;
+    
+    transition: opacity ease 0.5s;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
     
 }
 
 .header__album-cover_opened {
     display: block;
     visibility: hidden;
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
     transition: opacity .8s ease-in-out;
     -webkit-transition: opacity .8s ease-in-out;
@@ -29,10 +33,25 @@
     -moz-transition: opacity .8s ease-in-out;
 }
 
-@media screen and (max-width: 684px) {
+@media screen and (max-width: 1024px) {
     .header__album-cover {
-        width: 112px;
-        height: 112px;
+        margin-right: 27px;
+        width: 164px;
+        height: 164px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .header__album-cover {
+        margin-right: 30px;
+        width: 100px;
+        height: 100px;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .header__album-cover {
         display: none;
         align-self: center;
     }

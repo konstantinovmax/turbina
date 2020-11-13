@@ -2,7 +2,6 @@
     width: calc(100% - 2*35px);
     max-height: 104px;
     min-height: 104px;
-    margin-top: 28px;
     opacity: 0;
     align-self: center;
     overflow: hidden;

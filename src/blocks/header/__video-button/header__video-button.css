@@ -22,7 +22,7 @@
     display: flex;
 }
 
-@media screen and (max-width: 694px) {
+@media screen and (max-width: 620px) {
     .header__video-button {
         display: none;
         margin-right: 5px;

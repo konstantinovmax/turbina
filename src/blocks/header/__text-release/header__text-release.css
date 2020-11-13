@@ -26,12 +26,21 @@
     display: flex;
 }
 
-@media screen and (max-width: 694px) {
+@media screen and (max-width: 620px) {
     .header__text-release {
         display: none;
         width: 161px;
         height: 31px;
         margin-right: 0;
+    }
+
+    .header__text-release_opened {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__text-release {
         font-size: 12px;
         line-height: 15px;
     }

@@ -8,7 +8,13 @@
     width: calc(100% - 176px);
 }
 
-@media screen and (max-width: 694px) {
+@media screen and (max-width: 810px) {
+    .header__content-wrapper_opened {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 620px) {
     .header__content-wrapper {
         width: 100%;
     }

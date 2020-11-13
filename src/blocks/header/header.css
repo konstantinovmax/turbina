@@ -33,6 +33,9 @@
 @import url(./__streamings-spotify/header__streamings-spotify.css);
 @import url(./__streamings-apple-music/header__streamings-apple-music.css);
 @import url(./__streamings-vk-music/header__streamings-vk-music.css);
+@import url(./__songs-release-title/header__songs-release-title.css);
+@import url(./__cover-songs-container/header__cover-songs-container.css);
+@import url(./__controls-container/header__controls-container.css);
 
 .header {
     height: 100vh;

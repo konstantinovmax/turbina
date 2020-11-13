@@ -1,4 +1,6 @@
 .form__textarea {
-    padding-top: 20px;
-    overflow: hidden;
+  padding-top: 20px;
+  overflow: hidden;
+  resize: vertical;
+  min-height: 60px;
 }

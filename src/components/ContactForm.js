@@ -9,6 +9,7 @@ const useValidation = (value, validations) => {
     const [isEmailError, setEmailError] = useState(false)
     const [isContainNumbersError, setNumberError] = useState(false)
     const [isFullNameError, setFullNameError] = useState(false)
+    const [inputValid, setInputValid] = useState(false)
 
     useEffect(() => {
         for (const validation in validations) {
@@ -37,12 +38,28 @@ const useValidation = (value, validations) => {
         }
     }, [value])
 
+
+    useEffect(() => {
+        if (isEmpty || minLengthError || maxLengthError || isEmailError || isContainNumbersError || isFullNameError) {
+            setInputValid(false)
+        } else {
+            setInputValid(true)
+        }
+    }, [isEmpty,
+        minLengthError,
+        maxLengthError,
+        isEmailError,
+        isContainNumbersError,
+        isFullNameError])
+
     return {
         isEmpty,
         minLengthError,
         maxLengthError,
         isEmailError,
-        isContainNumbersError
+        isContainNumbersError,
+        isFullNameError,
+        inputValid
     }
 }
 
@@ -54,7 +71,6 @@ const useInput = (initialValue, validations) => {
 
     const onChange = (e) => {
         setValue(e.target.value)
-        console.log(value)
     }
 
     const onBlur = (e) => {
@@ -72,11 +88,10 @@ const useInput = (initialValue, validations) => {
 
 function ContactForm() {
 
-    const fullName = useInput('', { isEmpty: true, minLength: 5 })
+    const fullName = useInput('', { isEmpty: true, minLength: 5, isFullName: true })
     const email = useInput('', { isEmpty: true, isEmail: true, maxLength: 40 })
     const phoneNumber = useInput('', { isEmpty: true, isContainNumbers: true, maxLength: 12 })
-    const poems = useInput('', { isEmpty: true, minLength: 5 })
-
+    const poems = useInput('', { isEmpty: true, minLength: 2 })
 
     return (
         <article className="form">
@@ -84,7 +99,7 @@ function ContactForm() {
             <h3 className="form__subtitle">Заполняя эту форму, вы становитесь частью проекта.</h3>
             <form name="form-turbina" className="form__container" action="#">
                 <input className="form__input" onChange={e => fullName.onChange(e)} onBlur={e => fullName.onBlur(e)} value={fullName.value} name="fullName" type="text" placeholder="Имя и фамилия автора" />
-                {(fullName.isDirty && fullName.isEmpty) && <div style={{ color: 'red' }}>Поле обязательно для заполнения</div>}
+                {(fullName.isDirty && fullName.isFullNameError && fullName.isEmpty) && <div style={{ color: 'red' }}>Поле обязательно для заполнения (В формате: А-я)</div>}
                 {(fullName.isDirty && fullName.minLengthError) && <div style={{ color: 'red' }}>Минимальная длина: 5 символов</div>}
                 <input className="form__input" onChange={phoneNumber.onChange} onBlur={phoneNumber.onBlur} value={phoneNumber.value} name="phoneNumber" type="tel" placeholder="Телефон в формате +7 (999) 999 99 99" />
                 {(phoneNumber.isDirty && phoneNumber.isEmpty) && <div style={{ color: 'red' }}>Поле обязательно для заполнения</div>}
@@ -98,10 +113,10 @@ function ContactForm() {
                 {(poems.isDirty && poems.isEmpty) && <div style={{ color: 'red' }}>Поле обязательно для заполнения</div>}
                 {(poems.isDirty && poems.minLengthError) && <div style={{ color: 'red' }}>Минимальная длина: 2 символов</div>}
                 <div className="form__radio-container">
-                    <input className="form__radio" type="radio" value="agree" required />
+                    <input className="form__radio" type="radio" value="agree" />
                     <span className="form__radio-offer">Согласен с <a className="form__radio-offer-link" href="#">офертой</a></span>
                 </div>
-                <button className="form__submit-button">Отправить форму</button>
+                <button disabled={!fullName.inputValid || !phoneNumber.inputValid || !email.inputValid || !poems.inputValid} className="form__submit-button">Отправить форму</button>
             </form>
         </article>
     )

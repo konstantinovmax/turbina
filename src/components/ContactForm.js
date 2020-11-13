@@ -133,6 +133,6 @@ function ContactForm(inputValid) {
                 <button disabled={!fullName.inputValid || !phoneNumber.inputValid || !email.inputValid || !poems.inputValid} className="form__submit-button">Отправить форму</button>
             </form>
         </article>
-    )
+    );
 }
 export default ContactForm

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/turbina/static/css/main.5ee4929d.chunk.css",
+    "main.css": "/turbina/static/css/main.737c9dc6.chunk.css",
     "main.js": "/turbina/static/js/main.d635cf01.chunk.js",
     "main.js.map": "/turbina/static/js/main.d635cf01.chunk.js.map",
     "runtime-main.js": "/turbina/static/js/runtime-main.e7c6ea93.js",
@@ -10,7 +10,7 @@
     "static/js/3.e6ee3ce9.chunk.js": "/turbina/static/js/3.e6ee3ce9.chunk.js",
     "static/js/3.e6ee3ce9.chunk.js.map": "/turbina/static/js/3.e6ee3ce9.chunk.js.map",
     "index.html": "/turbina/index.html",
-    "static/css/main.5ee4929d.chunk.css.map": "/turbina/static/css/main.5ee4929d.chunk.css.map",
+    "static/css/main.737c9dc6.chunk.css.map": "/turbina/static/css/main.737c9dc6.chunk.css.map",
     "static/js/2.a5cfa17b.chunk.js.LICENSE.txt": "/turbina/static/js/2.a5cfa17b.chunk.js.LICENSE.txt",
     "static/media/index.css": "/turbina/static/media/video.25e1c495.svg",
     "static/media/apocalypse.f2c339f7.mp3": "/turbina/static/media/apocalypse.f2c339f7.mp3",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.e7c6ea93.js",
     "static/js/2.a5cfa17b.chunk.js",
-    "static/css/main.5ee4929d.chunk.css",
+    "static/css/main.737c9dc6.chunk.css",
     "static/js/main.d635cf01.chunk.js"
   ]
 }

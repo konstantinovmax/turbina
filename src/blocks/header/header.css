@@ -16,8 +16,10 @@
 @import url(./__album-wrapper/header__album-wrapper.css);
 @import url(./__content-wrapper/header__content-wrapper.css);
 @import url(./__album-cover/header__album-cover.css);
+@import url(./__album-cover-tablet/header__album-cover-tablet.css);
 @import url(./__album-cover-mobile/header__album-cover-mobile.css);
 @import url(./__track-progress/header__track-progress.css);
+@import url(./__progress-bar/header__progress-bar.css);
 @import url(./__songs-container/header__songs-container.css);
 @import url(./__songs-text/header__songs-text.css);
 @import url(./__text-release/header__text-release.css);
@@ -32,6 +34,8 @@
 @import url(./__streamings-spotify/header__streamings-spotify.css);
 @import url(./__streamings-apple-music/header__streamings-apple-music.css);
 @import url(./__streamings-vk-music/header__streamings-vk-music.css);
+@import url(./__songs-release-title/header__songs-release-title.css);
+@import url(./__cover-songs-container/header__cover-songs-container.css);
 
 .header {
     height: 100vh;

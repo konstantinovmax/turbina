@@ -13,7 +13,7 @@
 
 .header__play-pause:hover {
     opacity: 0.6;
-    transition: opacity ease .3s;
+    transition: opacity ease .1s;
 }
 
 .header__play-pause_pause {

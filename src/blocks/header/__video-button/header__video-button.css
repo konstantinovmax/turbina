@@ -22,11 +22,15 @@
     display: flex;
 }
 
-@media screen and (max-width: 694px) {
+@media screen and (max-width: 620px) {
     .header__video-button {
-        display: flex;
+        display: none;
         margin-right: 5px;
         width: 74px;
         height: 31px;
+    }
+
+    .header__video-button_opened {
+        display: flex;
     }
 }

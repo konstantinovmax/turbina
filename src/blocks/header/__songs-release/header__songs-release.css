@@ -1,12 +1,16 @@
 .header__songs-release {
+    margin: 0;
     font: Inter;
     font-weight: 400;
-    font-style: italic;
     font-size: 20px;
-    line-height: 22px;
-    margin-top: 0;
-    margin-bottom: 0;
+    line-height: 24px;
     /* max-width: calc(100% - 10px); */
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.header__songs-release:hover {
+    font-style: italic;
 }
 
 .header__songs-release_closed {

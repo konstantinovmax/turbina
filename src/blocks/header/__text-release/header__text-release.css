@@ -18,21 +18,35 @@
 }
 
 .header__text-release:hover {
+    font-style: italic;
     opacity: 0.6;
-    transition: opacity ease .3s;
+    transition: opacity ease .1s;
 }
 
 .header__text-release_opened {
     display: flex;
 }
 
-@media screen and (max-width: 694px) {
+@media screen and (max-width: 620px) {
     .header__text-release {
-        display: flex;
+        display: none;
         width: 161px;
         height: 31px;
         margin-right: 0;
+    }
+
+    .header__text-release_opened {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__text-release {
         font-size: 12px;
         line-height: 15px;
+    }
+
+    .header__text-release_opened {
+        display: flex;
     }
 }

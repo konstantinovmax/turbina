@@ -1,0 +1,9 @@
+.header__progress-bar {
+    height: 3px;
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+

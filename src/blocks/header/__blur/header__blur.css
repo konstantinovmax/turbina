@@ -9,7 +9,7 @@
 }
 
 
-@media screen and (max-width: 694px) {
+@media screen and (max-width: 620px) {
     .header__blur_active {
         filter: blur(8px);
     }

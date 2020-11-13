@@ -43,15 +43,6 @@
 
 @media screen and (max-width: 810px) {
     .header__album-cover {
-        margin-right: 30px;
-        width: 100px;
-        height: 100px;
-        align-self: center;
-    }
-}
-
-@media screen and (max-width: 620px) {
-    .header__album-cover {
         display: none;
         align-self: center;
     }

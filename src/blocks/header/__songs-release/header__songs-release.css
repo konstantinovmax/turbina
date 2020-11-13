@@ -4,7 +4,6 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    margin-left: 40px;
     /* max-width: calc(100% - 10px); */
     cursor: pointer;
     margin-top: 16px;
@@ -22,12 +21,6 @@
     .header__songs-release {
         font-size: 18px;
         line-height: 22px;
-    }
-}
-
-@media screen and (max-width: 810px) {
-    .header__songs-release {
-        margin-left: 30px;
     }
 }
 

@@ -19,6 +19,6 @@
     .header__track-progress {
         width: calc(100% - 2*40px);
         align-self: flex-start;
-        margin-left: 40px;
+        margin-left: 39px;
     }
 }

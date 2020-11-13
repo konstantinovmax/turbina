@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: -104px;   
+    bottom: -104px;
 }
 
 .header__song-player_opened {

@@ -1,6 +1,7 @@
 # Проект Турбинá
 
 Музыкальный проект "Турбина́" для детского книжного магазина [Маршак](https://marshakbooks.ru/).
+
 Подробнее о проекте: [ссылка на новость о проекте](https://meduza.io/shapito/2020/11/18/rossiyskie-muzykanty-zapisyvayut-pesni-na-detskie-stihi-eto-proekt-magazina-marshak-pervymi-vystupila-gruppa-hadn-dadn) на сайте Meduza.io.
 
 **Применяемые технологии**

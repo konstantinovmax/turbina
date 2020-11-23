@@ -1,0 +1,24 @@
+.header__track-progress {
+    width: calc(100% - 2*35px);
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    align-self: center;
+    position: relative;
+ 
+}
+
+.header__track-progress_short {
+    width: calc(100% - 2*35px - 20px - 135px - 112px);
+    align-self: flex-start;
+    margin-left: 35px;
+}
+
+
+
+@media screen and (max-width: 620px) {
+    .header__track-progress {
+        width: calc(100% - 2*40px);
+        align-self: flex-start;
+        margin-left: 39px;
+    }
+}

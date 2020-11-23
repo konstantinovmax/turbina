@@ -1,0 +1,10 @@
+.header__desktop-button-wrapper {
+    display: flex;
+    margin: auto;
+}
+
+@media screen and (max-width: 620px) {
+    .header__desktop-button-wrapper {
+        display: none;
+    }
+}

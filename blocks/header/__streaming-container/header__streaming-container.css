@@ -1,8 +1,0 @@
-.header__streaming-container {
-    
-}
-
-.header__streaming-container:hover {
-    opacity: 0.6;
-    transition: opacity ease .3s;
-}

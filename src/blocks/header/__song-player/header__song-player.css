@@ -1,0 +1,34 @@
+.header__song-player {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: -104px;
+    transition: bottom .4s linear;
+}
+
+.header__song-player_opened {
+    bottom: 40px;
+    transition: bottom .4s linear;
+}
+
+@media screen and (max-width: 640px) {
+    .header__song-player {
+        bottom: -109px;
+    }
+    .header__song-player_opened {
+        bottom: 35px;
+        transition: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .header__song-player {
+        bottom: -129px;
+    }
+    .header__song-player_opened {
+        bottom: 35px;
+        transition: none;
+    }
+}

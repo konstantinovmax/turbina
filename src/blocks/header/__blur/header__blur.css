@@ -1,0 +1,16 @@
+.header__blur {
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+@media screen and (max-width: 620px) {
+    .header__blur_active {
+        filter: blur(8px);
+    }
+}

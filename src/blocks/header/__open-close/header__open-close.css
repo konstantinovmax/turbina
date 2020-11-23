@@ -1,0 +1,35 @@
+.header__open-close {
+    background: rgba(0, 0, 0, 0);
+    background-image: url(../../../images/open.svg);
+    border: none;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    outline: none;
+    cursor: pointer;
+}
+
+.header__open-close:hover {
+    opacity: 0.6;
+    transition: opacity ease .1s;
+}
+
+.header__open-close_close {
+    background: rgba(0, 0, 0, 0);
+    background-image: url(../../../images/close.svg);
+    border: none;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@media screen and (max-width: 480px) {
+    .header__open-close {
+        width: 16px;
+        height: 16px;
+    }
+}

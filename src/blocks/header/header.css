@@ -1,0 +1,50 @@
+@import url(./__logo/header__logo.css);
+@import url(./__blur/header__blur.css);
+@import url(./__streamings/header__streamings.css);
+@import url(./__streaming-title/header__streaming-title.css);
+@import url(./__title/header__title.css);
+@import url(./__image/header__image.css);
+@import url(./__song-player/header__song-player.css);
+@import url(./__controls/header__controls.css);
+@import url(./__play-pause/header__play-pause.css);
+@import url(./__song-name/header__song-name.css);
+@import url(./__song-duration/header__song-duration.css);
+@import url(./__open-close/header__open-close.css);
+@import url(./__desktop-button-wrapper/header__desktop-button-wrapper.css);
+@import url(./__button-wrapper/header__button-wrapper.css);
+@import url(./__mobile-button-wrapper/header__mobile-button-wrapper.css);
+@import url(./__album-wrapper/header__album-wrapper.css);
+@import url(./__content-wrapper/header__content-wrapper.css);
+@import url(./__album-cover/header__album-cover.css);
+@import url(./__album-cover-tablet/header__album-cover-tablet.css);
+@import url(./__album-cover-mobile/header__album-cover-mobile.css);
+@import url(./__track-progress/header__track-progress.css);
+@import url(./__progress-bar/header__progress-bar.css);
+@import url(./__songs-container/header__songs-container.css);
+@import url(./__songs-text/header__songs-text.css);
+@import url(./__text-release/header__text-release.css);
+@import url(./__video-button/header__video-button.css);
+@import url(./__songs-release/header__songs-release.css);
+@import url(./__logo-link/header__logo-link.css);
+@import url(./__streaming-container/header__streaming-container.css);
+@import url(./__streaming-button-container/header__streaming-button-container.css);
+@import url(./__streaming-link/header__streaming-link.css);
+@import url(./__streamings-yandex/header__streamings-yandex.css);
+@import url(./__streamings-button/header__streamings-button.css);
+@import url(./__streamings-spotify/header__streamings-spotify.css);
+@import url(./__streamings-apple-music/header__streamings-apple-music.css);
+@import url(./__streamings-vk-music/header__streamings-vk-music.css);
+@import url(./__songs-release-title/header__songs-release-title.css);
+@import url(./__cover-songs-container/header__cover-songs-container.css);
+
+.header {
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+

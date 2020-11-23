@@ -1,0 +1,6 @@
+.header__album-wrapper {
+    width: calc(100% - 2*25px);
+    display: flex;
+    justify-content: flex-end;
+}
+

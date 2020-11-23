@@ -1,0 +1,36 @@
+.header__video-button {
+    display: none;
+    width: 94px;
+    height: 35px;
+    background-image: url(../../../images/video.svg);
+    border: none;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.header__video-button:hover {
+    opacity: 0.6;
+    transition: opacity ease .1s;
+}
+
+.header__video-button_opened {
+    display: flex;
+}
+
+@media screen and (max-width: 620px) {
+    .header__video-button {
+        display: none;
+        margin-right: 5px;
+        width: 74px;
+        height: 31px;
+    }
+
+    .header__video-button_opened {
+        display: flex;
+    }
+}

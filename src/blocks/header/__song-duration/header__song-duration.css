@@ -1,0 +1,24 @@
+.header__song-duration {
+    font: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.2px;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__song-duration  {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__song-duration  {
+        font-size: 14px;
+        line-height: 19px;
+        margin-right: 11px;
+    }
+}

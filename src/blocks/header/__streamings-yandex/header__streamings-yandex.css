@@ -1,0 +1,18 @@
+.header__streamings-yandex {
+    width: 181px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 480px) {
+    .header__streamings-yandex {
+        width: 138px;
+        height: 29px;
+    }
+}

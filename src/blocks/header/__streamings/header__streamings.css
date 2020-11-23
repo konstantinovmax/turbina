@@ -1,0 +1,18 @@
+.header__streamings {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+    .header__streamings {
+        top: 10px;
+        right: 11px;
+    }
+}

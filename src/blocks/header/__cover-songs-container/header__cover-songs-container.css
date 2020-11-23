@@ -1,0 +1,16 @@
+.header__cover-songs-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__cover-songs-container {
+        margin-top: 28px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .header__cover-songs-container {
+        margin-top: 20px;
+    }
+}

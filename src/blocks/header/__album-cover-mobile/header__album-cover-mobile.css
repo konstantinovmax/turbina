@@ -1,0 +1,26 @@
+.header__album-cover-mobile {
+    display: none;
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+    object-fit: cover;
+    
+    transition: opacity ease 0.5s;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 620px) {
+    .header__album-cover-mobile_opened_visible {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity .8s ease-in-out;
+        -webkit-transition: opacity .8s ease-in-out;
+        -moz-transition: opacity .8s ease-in-out;
+    }
+    
+}
+
